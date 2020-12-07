@@ -6,15 +6,21 @@
 
 <body>
     
-
+    <style>
+        body {
+          background-image: url('bg.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        </style>
 
     <table style="width:100%">
        
         <th>
-            <a href="lab1.html">home</a>
-            <a href="link.html">link</a>
-            <a href="pic.html">pic</a>
-           
+            <a href="lab1.html">Home</a>         
+            <a href="pic.html">Gallery</a>
+            <a href="link.html">Contact</a>
         </th>
      
         
@@ -26,10 +32,32 @@
            Facebook:<a href="https://www.facebook.com/pr.kaewthep/">https://www.facebook.com/pr.kaewthep/</a><br>
            
            Fanpage:<a href="https://www.facebook.com/Scientist.dell">https://www.facebook.com/Scientist.dell</a><br>
-           Email:Prayat_k@cmu.ac.th<br>
+           Email:<a href="Prayat_k@cmu.ac.th">Prayat_k@cmu.ac.th</a><br>
         </p>
     
-      
+        <div style="border: 2px solid black;">
+            <form>
+                <label for="fname">Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter Name"><br>
+                <label for="lname">Subject:</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter Subject"><br>
+                
+                <label for="lname">Massage</label>
+                <textarea id ="lname" name = "Massage" placeholder="Enter Massage"rows="4" cols="50"></textarea> <br>
+                <label for="fgender">Gender :</label>
+                <input type="checkbox" id = "Male" name = "Male">
+                <label for="Male">Male</label>
+                <input type="checkbox" id = "Female" name = "Female">
+                <label for="Female">Female</label>
+                <br>
+                <label for="femail">E-mail:</label>
+                <input type="text" id="femail" placeholder="Enter E-mail"name="femail"><br>
+                <label for="lphone">Phone:</label>
+                <input type="text" id="lphone" placeholder="Enter Phone"name="lphone"><br>
+                <input type="submit" value="Submit">
+              </form>
+             
+        </div>
 
 </body>
 </html>
